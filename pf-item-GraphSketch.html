@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Node Graph Sketch Pad Showcase</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                Project: <strong>Node Graph Sketch Pad</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Graph Thoery Project</p>
+            <img src="img/workImages/graphTheoryProj.png" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p class="projText">This project was the final project for my graph theory class. I worked individually to create a sketch pad that can create node graphs. The user can create and delete nodes as well as edges. Parallel edges can also be added and the color of the nodes can be changed. The program shows basic information of the graph like the weight of each node when it is hovered, how many edges and nodes are present, what the node tables looks like, and shows all the edge pairs in a dictionary. A quality of life featured added is the ability to move the nodes freely around the board.</p>
+            <img src="img/workImages/nodeShow.png" alt="Program Display" class="showcaseImg">
+            <p class="projText">I used Godot, a 2D game engine that uses GDscript to create this program. It is structured where each object is a scene (like a class) with its own script to run back end code. The UI was built on the 2D display of Godot. I used simple UI elements like buttons and text boxes as well as more advanced elements like a scrollable text display. There were several minor features added for easier usage like disabling a selected button when pushing another button.</p>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="kjadachi2@gmail.com" class="footer__link">kjadachi2@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>

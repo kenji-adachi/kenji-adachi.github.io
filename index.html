@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kenji Adachi Web-Portfolio</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+        <!-- IF YOU SEE THIS: HELLO THERE SNOOPER -->
+
+        <!-- FavIcon -->
+        <link rel="icon" type="image/png" href="img/workImages/favicon-32x32.png" sizes="32x32" />
+        <!-- <link rel="icon" type="image/png" href="img/workImages/favicon-16x16.png" sizes="16x16" /> -->
+
+
+
         <!-- Update these with your own fonts -->
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
         
@@ -38,7 +47,7 @@
                 Hi, I am <strong>Kenji Adachi</strong>
             </h1>
             <p class="section__subtitle section__subtitle--intro">Computer Science Student</p>
-            <img src="img/kada-01.png" alt="a picture of Kenji Adachi smiling" class="intro__img">
+            <img src="img/kadaFace2.JPG" alt="a picture of Kenji Adachi smiling" class="intro__img">
         </section>
         
         
@@ -53,21 +62,21 @@
                 
                 <div class="service">
                     <h3>Front-End</h3>
-                    <p>I learned front-end development from class group projects and Hackathons. I have experience using C#/C++ winRT XAML and Python PyQT5. I also built this website using html/CSS/Javascript</p>
+                    <p>I learned front-end development from class group projects and Hackathons. I have experience using HTML, CSS, JavaScript, C#/C++ winRT XAML and Python PyQT5. I also have experience using Bootstrap and connecting databases to websites. I have built websites for class, projects and personal use</p>
                 </div> <!-- / service -->
                 
                 <div class="service">
                     <h3>Back-End</h3>
-                    <p>Most of the classes and experience is with back-end development where I am strongly experience in C/C++ and Python. I also have experience coding with Haskell, C#, and Swift</p>
+                    <p>Most of the classes and experience is with back-end development where I am strongly experience in C/C++ and Python. I also have experience coding with JavaScript, Haskell, C#, and Swift</p>
                 </div> <!-- / service -->
 
                 <div class="service">
                     <h3>Data Management</h3>
-                    <p>I learned to use database systems to organize data using SQL in PostgreSQL. Creating ER (Entity Relation) Diagrams and applying it to the database system. I am also learning how to manage big data and utilize it in an application </p>
+                    <p>I learned to use database systems to organize data using SQL in PostgreSQL and MongoDB. Creating ER (Entity Relation) Diagrams and applying it to the database system. I also learned to manage big data and utilize it in an application with relational and non-relational SQL</p>
                 </div> <!-- / service -->
             </div> <!-- / services -->
             
-            <a href="#work" class="btn">My Work</a>
+            <a href="#work" class="wbtn">My Work</a>
         </section>
         
         
@@ -83,7 +92,7 @@
                <p>In the end I hope to apply my current skills and toolsets in software developing career and to learn more from it. I am excited to meet people in the industry and be able to grow as an individual while helping others grow.</p>
            </div>
            
-           <img src="img/kada-02.png" alt="Kenji leaning against wall behind" class="about-me__img">
+           <img src="img/kadaBody1.jpg" alt="Kenji walking on road in the fall" class="about-me__img">
         </section>
         
         <!-- My Work -->
@@ -93,54 +102,82 @@
             
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
+                <a href="pf-item-ANT.html" class="portfolio__item">
+                    <div class="card">
+                        <img src="img/workImages/ant.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">ANT Software</h5>
+                          <p class="card-text">All Things New (ANT) is a group-base community application to challenge others to try new things.</p>
+                        </div>
+                      </div>
                 </a>
                 
                 <!-- Portfolio item 02 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
+                <a href="pf-item-Pipesim.html" class="portfolio__item">
+                    <div class="card">
+                        <img src="img/workImages/pipesimFront.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">PipeSim</h5>
+                          <p class="card-text">Python Pipe Simulation Model to support a client in their research.</p>
+                        </div>
+                      </div>
                 </a>
                 
                 <!-- Portfolio item 03 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
+                <a href="pf-item-BananaAI.html" class="portfolio__item">
+                    <div class="card">
+                        <img src="img/workImages/bananaAIProj.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Banana AI</h5>
+                          <p class="card-text">Uses machine learning technology to look at an image of a banana and determine if it is ripe or not.</p>
+                        </div>
+                      </div>
                 </a>
                 
                 <!-- Portfolio item 04 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
+                <a href="pf-item-GraphSketch.html" class="portfolio__item">
+                    <div class="card">
+                        <img src="img/workImages/graphTheoryProj.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Node Graph Sketch Pad</h5>
+                          <p class="card-text">Software to create a node graph while showing various graph information.</p>
+                        </div>
+                      </div>
                 </a>
                 
                 <!-- Portfolio item 05 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
+                <a href="pf-item-PlaneSearch.html" class="portfolio__item">
+                    <div class="card">
+                        <img src="img/workImages/airlineSEProj.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Airline Flight Search Engine</h5>
+                          <p class="card-text">Program that allows the user to search various airlines, airports and plan flights.</p>
+                        </div>
+                      </div>
                 </a>
+
+                <!-- Portfolio item ADD -->
+                <div class="portfolio__item">
+                    <div class="card">
+                        <img src="img/workImages/KadaImage.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">More To Come!</h5>
+                          <p class="card-text">I have several other experiences I will be adding over time.</p>
+                        </div>
+                      </div>
+                    </div>
                 
                 <!-- Portfolio item 06 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
-                </a>
+                <!-- <a href="portfolio-item.html" class="portfolio__item">
+                    <div class="card">
+                        <img src="img/portfolio-06.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </a> -->
                 
-                <!-- Portfolio item 07 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-07.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 08 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-08.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 09 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-09.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 0 0-->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-10.jpg" alt="" class="portfolio__img">
-                </a>
             </div>
         </section>
         
@@ -165,6 +202,7 @@
         
         
         <script src="js/index.js"></script>
-        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
     </body>
 </html>

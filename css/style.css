@@ -19,6 +19,7 @@
     --clr-accent: #741010;*/
     --clr-accent: #21cee2;
     --clr-tinted: #6d6d6d;
+    --clr-darkTint: #343939;
 
     
     --fs-h1: 3rem;
@@ -42,9 +43,9 @@
 /* General styles */
 
 /* endable this to add smooth scrolling */
-/* html {
+html {
     scroll-behavior: smooth;
-} */
+}
 
 
 body {
@@ -74,7 +75,7 @@ strong { font-weight: var(--fw-bold) }
 
 /* Buttons */
 
-.btn {
+.wbtn {
     display: inline-block;
     padding: .5em 2.5em;
     background: var(--clr-accent);
@@ -88,8 +89,9 @@ strong { font-weight: var(--fw-bold) }
     transition: transform 200ms ease-in-out;
 }
 
-.btn:hover {
+.wbtn:hover {
     transform: scale(1.1);
+    color: var(--clr-dark);
 }
 
 /* Typography */
@@ -298,8 +300,8 @@ header {
 /*  My services section  */
 
 .my-services {
-    background-color: var(--clr-tinted);
-    background-image: url(../img/services-bg.jpg);
+    background-color: var(--clr-darkTint);
+    background-image: url(../img/codingBG.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -392,34 +394,99 @@ header {
 .my-work {
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    text-align: center;    
+    text-align: center;
 }
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    /* background: var(--clr-accent); */
     overflow: hidden;
-}
-
-.portfolio__img {
+    text-decoration: none;
+    color: var(--clr-dark);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
 }
 
-.portfolio__item:focus {
-    position: relative;
-    z-index: 2;
+.card-img-top{
+    position: absolute;
+    overflow: hidden;
+    border-radius: 4px;
+    height: 100%;
 }
 
-.portfolio__img:hover,
+.portfolio__item:hover .card-body{
+    transform: translate3d(0,30%,0);
+    color: var(--clr-dark);
+}
+
+.card-body{
+    position: absolute;
+    width: 303px;
+    margin-left: -5px;
+    height: 300px;
+    background-color: var(--clr-light);
+    transition: transform 500ms;
+    transform: translate3d(0, 100%, 0);
+    font-size: large;
+    font-weight: 700;
+}
+
+.card-title{
+    background-color: var(--clr-light);
+    font-size: large;
+    font-weight:bolder;
+    /* transition: transform 300ms; */
+    transform: translate3d(0,-50px,0);
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+}
+
+/* .portfolio__img{
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+} */
+
+/* .card-img-top {
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+} */
+
+.portfolio__item:focus {
+    position: relative;
+    z-index: 3;
+}
+
+.portfolio__item:hover,
 .portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
-    opacity: .5;
+    transform: scale(1.02);
+}
+
+
+/* Individual portfolio item styles */
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -468,17 +535,31 @@ header {
     padding: .5em;
 }
 
-
-/* Individual portfolio item styles */
-
-.portfolio-item-individual {
-    padding: 0 2em 2em;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.portfolio-item-individual p {
-    max-width: 600px;
+.showcaseImg{
+    box-shadow: var(--bs);
+    border-radius: 3px;
+    width: 70%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.projText{
+    font-size: var(--fs-h3);
+}
+
+.linkProj{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--clr-accent);
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+}
+
+.linkProj:hover{
+    text-decoration: underline;
+    opacity: 0.8;
 }
